@@ -1,0 +1,38 @@
+version: "3.3"
+
+services:
+  mariadb:
+    image: linuxserver/mariadb:latest
+    container_name: mariadb
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MYSQL_DATABASE=baseball
+      - MYSQL_ROOT_PASSWORD=finalproject
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=finalproject
+    ports:
+      - "3307:3306"
+    restart: unless-stopped
+    volumes:
+      - mariadb_data:/config
+    networks:
+      - finalprojectNetwork
+
+  finalproject:
+    build:
+      context: .
+    image: finalproject
+    container_name: finalproject
+    volumes:
+      - "./output:/app/output"
+    depends_on:
+      - mariadb
+    networks:
+      - finalprojectNetwork
+
+volumes:
+  mariadb_data:
+
+networks:
+  finalprojectNetwork:
