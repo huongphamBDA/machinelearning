@@ -4,10 +4,6 @@ FROM python:3.8
 ENV APP_HOME /app
 WORKDIR $APP_HOME
 
-#RUN apt-get update \
-#    && apt-get install --no-install-recommends --yes build-essential libmariadb3 libmariadb-dev mysql-client python3 python3-pip python3-dev \
-#    && apt-get autoremove -y
-
 RUN apt-get update \
     && apt-get install --no-install-recommends --yes mariadb-client libmariadb3 libmariadb-dev build-essential \
     && apt-get autoremove -y
