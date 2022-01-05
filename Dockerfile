@@ -1,4 +1,3 @@
-#FROM ubuntu
 FROM python:3.8
 
 ENV APP_HOME /app
@@ -9,7 +8,7 @@ RUN apt-get update \
     && apt-get autoremove -y
 
 COPY final_project.sh ./final_project.sh
-COPY mariadb_data/baseball.sql ./baseball.sql
+COPY baseball.sql ./baseball.sql
 COPY utils_pham.py ./utils_pham.py
 COPY process_baseball_pham.py ./process_baseball_pham.py
 COPY final_project_pham.py ./final_project_pham.py
