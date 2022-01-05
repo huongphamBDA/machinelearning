@@ -7,12 +7,16 @@ See [Wiki](https://github.com/huongphamBDA/machinelearning/wiki) for project rep
 git clone git@github.com:huongphamBDA/machinelearning.git
 ```
 
-2. Change directory to machine learning 
+2. Download and unpack dataset from `teaching.mrsharky.com/data/baseball.sql.tar.gz`. This should give you `baseball.sql`.
+
+3. Copy `baseball.sql` to `machinelearning` directory
+
+4. Change directory to `machinelearning` 
 ```
 cd machinelearning
 ```
 
-3. Start the containers in the background. The process will take about twenty minutes depending on computers 
+5. Start the containers. The process will take about thirty minutes depending on computers.
 ```
-docker-compose up -d
+docker-compose up
 ```
