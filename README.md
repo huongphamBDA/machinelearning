@@ -7,7 +7,11 @@ See [Wiki](https://github.com/huongphamBDA/machinelearning/wiki) for project rep
 git clone git@github.com:huongphamBDA/machinelearning.git
 ```
 
-2. Download and unpack dataset from `teaching.mrsharky.com/data/baseball.sql.tar.gz`. This should give you `baseball.sql`.
+2. Download and unpack dataset `baseball.sql.tar.gz` [here](https://drive.google.com/file/d/1pXAwQQMJ4TBUasldnm-1HD8PE8WZgi0k/view?usp=sharing). 
+```
+tar -xvzf baseball.sql.tar.gz
+```
+This should give you `baseball.sql`.
 
 3. Copy `baseball.sql` to `machinelearning` directory
 
