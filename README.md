@@ -14,16 +14,16 @@ tar -xvzf baseball.sql.tar.gz
 ```
 This should give you `baseball.sql`.
 
-3. Copy `baseball.sql` to `machinelearning` directory
+4. Copy `baseball.sql` to `machinelearning` directory
 ```
 cp baseball.sql machinelearning/.
 ```
-4. Change directory to `machinelearning` 
+5. Change directory to `machinelearning` 
 ```
 cd machinelearning
 ```
 
-5. Start the containers. The process will take about thirty minutes depending on computers.
+6. Start the containers. The process will take about thirty minutes depending on computers.
 ```
 docker-compose up
 ```
