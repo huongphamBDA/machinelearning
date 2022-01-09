@@ -1,7 +1,7 @@
 # Jenny Huong Pham's Machine Learning Engineering Project 
-See [Wiki](https://github.com/huongphamBDA/machinelearning/wiki) for project report.
+## See [Wiki](https://github.com/huongphamBDA/machinelearning/wiki) for project report.
 
-# Instructions to run the code 
+## Instructions to run the code 
 1. Git clone the repository.
 ```
 git clone git@github.com:huongphamBDA/machinelearning.git
